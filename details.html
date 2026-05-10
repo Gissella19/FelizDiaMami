@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Regalo Especial</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300;600;800&family=Space+Grotesk:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="ambient"></div>
+
+    <header class="hero" id="inicio">
+      <div class="hero__content">
+        <p class="eyebrow">Para alguien muy especial</p>
+        <h1>Un regalo hecho con recuerdos</h1>
+        <p class="subtitle">
+          Escribirte es la forma más bonita que tengo de darte las gracias.
+          Hecho con amor y código, este regalo es un pequeño reflejo de lo que significas para mi.
+        </p>
+        <div class="hero__actions">
+          <button class="btn btn--primary" data-next="#galeria">Ver recuerdos</button>
+          <button class="btn btn--ghost" data-next="#carta">Ir a la carta</button>
+        </div>
+      </div>
+      <div class="hero__card">
+        <div class="hero__stamp">Mamita</div>
+        <div class="hero__frame">
+          <img src="images/mami.jpeg" alt="Foto principal" />
+        </div>
+        <p class="hero__note">Cada foto aquí guardada tiene un pedacito de mi felicidad &lt;3.</p>
+      </div>
+    </header>
+
+    <main>
+    <section class="section" id="galeria">
+      <div class="section__header">
+        <h2>Recuerdos</h2>
+        <p>Una coleccion de momentos que significan mucho.</p>
+      </div>
+      <div class="gallery" id="gallery"></div>
+      <div class="section__actions">
+        <button class="btn btn--primary" data-next="#musica">Siguiente</button>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="musica">
+      <div class="section__header">
+        <h2>Una cancion para ti</h2>
+        <p>   </p>
+      </div>
+      <div class="music">
+        <div class="music__embed">
+          <video controls style="width:100%; border-radius:18px; background:#000;" poster="images/portada.jpg">
+            <source src="images/amornollores.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de video.
+          </video>
+        </div>
+        <div class="music__text">
+          <h3>MAMITA LINDA</h3>
+          <p>
+            Te elegí esta canción porque, aunque el mundo a veces sea gris, mi mayor deseo es que nunca se apague esa luz que llevan tus ojos. Quiero que sigas viendo magia en cada rincón, que sigas soñando despierta y que nunca pierdas esa capacidad de asombro que te hace tan especial. 
+            Si alguna vez sientes que el camino pesa, escucha esto y recuerda que siempre estaré aquí para ayudarte a encontrar la calma :3
+          </p>
+        </div>
+      </div>
+      <div class="section__actions">
+        <button class="btn btn--primary" data-next="#carta">Siguiente</button>
+      </div>
+    </section>
+
+      <section class="section" id="carta">
+        <div class="section__header">
+          <h2>Una carta</h2>
+        </div>
+        <div class="letter carta-flex">
+          <div class="carta-texto">
+            <p>FELIZ DIA MAMITA LINDA,</p>
+            <p style="text-align: justify;">
+              Querida mamá nunca te lo digo lo suficiente ,
+              pero te admiro más de lo que las palabras pueden expresar,
+              eres la persona más fuerte que conozco,
+              incluso en los días en los que no te sientes así,
+              haz echo sacrificios que jamás podré comprender del todo
+            </p>
+            <p style="text-align: justify;">
+              Renunciaste a tus sueños para que yo pudiera perseguir los mios,
+              te vi llorar a escondidas pensando que yo no notaba pero siempre supe 
+              que tus lágrimas eran por darnos lo mejor a veces soy egoísta ,
+              aveces olvidó agradecerte por las cosas más simples,por levantarme 
+              cuando me caigo,por seguir creyendo en mi, cuando yo misma dejo de hacerlo,
+              por sostener todo un mundo en tus hombros sin quejarte
+            </p>
+            <p style="text-align: justify;">
+              Gracias por cada comida preparada con amor ,por los abrazos que sanan,
+              por los regaños que duelen pero me hacen mejor persona,si el amor 
+              tuviera nombre llevaria el tuyo te quiero con todo mi corazón ❤️
+            </p>
+            <p>Con cariño,</p>
+            <p class="signature">Tu hija</p>
+          </div>
+          <div class="carta-img">
+            <img src="images/aww.jpeg" alt="Imagen especial" />
+          </div>
+        </div>
+        <div class="section__actions">
+          <button class="btn btn--ghost" data-next="#inicio">Volver arriba</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Hecho con dedicacion y muchos recuerdos.</p>
+      <div class="footer__actions">
+        <a href="index.html" class="btn btn--primary">Volver a la Flor</a>
+      </div>
+    </footer>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <button class="lightbox__close" id="lightboxClose" aria-label="Cerrar">Cerrar</button>
+      <img id="lightboxImage" alt="" />
+      <p id="lightboxCaption"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

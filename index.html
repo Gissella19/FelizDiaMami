@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feliz Dia Mami</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ui-overlay" aria-hidden="true">
+    <span class="ui-overlay-text">storage storage storage</span>
+  </div>
+
+  <main class="app-shell">
+    <section class="love-card" aria-label="tarjeta principal con flor">
+      <p class="love-text">HOLA MAMI<span aria-hidden="true"></span></p>
+      <div class="flower-wrap" aria-hidden="true">
+        <div class="bees-container">
+          <div class="bee bee-1" aria-hidden="true">
+            <div class="bee-wing bee-wing-left"></div>
+            <div class="bee-wing bee-wing-right"></div>
+          </div>
+          <div class="bee bee-2" aria-hidden="true">
+            <div class="bee-wing bee-wing-left"></div>
+            <div class="bee-wing bee-wing-right"></div>
+          </div>
+          <div class="bee bee-3" aria-hidden="true">
+            <div class="bee-wing bee-wing-left"></div>
+            <div class="bee-wing bee-wing-right"></div>
+          </div>
+          <div class="bee bee-4" aria-hidden="true">
+            <div class="bee-wing bee-wing-left"></div>
+            <div class="bee-wing bee-wing-right"></div>
+          </div>
+          <div class="bee bee-5" aria-hidden="true">
+            <div class="bee-wing bee-wing-left"></div>
+            <div class="bee-wing bee-wing-right"></div>
+          </div>
+          <div class="bee bee-6" aria-hidden="true">
+            <div class="bee-wing bee-wing-left"></div>
+            <div class="bee-wing bee-wing-right"></div>
+          </div>
+          <div class="bee bee-7" aria-hidden="true">
+            <div class="bee-wing bee-wing-left"></div>
+            <div class="bee-wing bee-wing-right"></div>
+          </div>
+          <div class="bee bee-8" aria-hidden="true">
+            <div class="bee-wing bee-wing-left"></div>
+            <div class="bee-wing bee-wing-right"></div>
+          </div>
+          <div class="bee bee-9" aria-hidden="true">
+            <div class="bee-wing bee-wing-left"></div>
+            <div class="bee-wing bee-wing-right"></div>
+          </div>
+          <div class="bee bee-10" aria-hidden="true">
+            <div class="bee-wing bee-wing-left"></div>
+            <div class="bee-wing bee-wing-right"></div>
+          </div>
+          <div class="bee bee-11" aria-hidden="true">
+            <div class="bee-wing bee-wing-left"></div>
+            <div class="bee-wing bee-wing-right"></div>
+          </div>
+          <div class="bee bee-12" aria-hidden="true">
+            <div class="bee-wing bee-wing-left"></div>
+            <div class="bee-wing bee-wing-right"></div>
+          </div>
+        </div>
+        <div class="sunflower">
+          <canvas id="flower-canvas" aria-label="Flor dinámica" width="220" height="390"></canvas>
+        </div>
+        <p class="setup-note">Primero diseña los pétalos en Ajustes y luego pulsa Siguiente.</p>
+        <a class="next-page-btn" href="details.html" aria-label="Ir a la siguiente página">Siguiente</a>
+        <button class="controls-toggle" id="controls-toggle" type="button" aria-expanded="false" aria-controls="flower-controls">Ajustes</button>
+        <aside class="controls" id="flower-controls" aria-label="Controles de flor">
+          <label>Petalos: <input id="ctrl-petals" type="range" min="6" max="48" value="24"></label>
+          <label>Densidad: <input id="ctrl-density" type="range" min="20" max="70" value="46"></label>
+          <label>Ancho Pétalo: <input id="ctrl-width" type="range" min="6" max="40" value="22"></label>
+          <label>Color 2: <input id="ctrl-color2" type="color" value="#f7bc2a"></label>
+          <label>Color 3: <input id="ctrl-color3" type="color" value="#e4a315"></label>
+          <div class="controls-row">
+            <button id="btn-animate">Animar trazo</button>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <script src="script-index.js"></script>
+</body>
+</html>
